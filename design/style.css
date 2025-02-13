@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* background: white; */
+    position: relative;
+    background-image: url(gambar/bgr.png);
+    background-size: cover;
+}
+
+/* Navigation */
+header {
+    padding: 2rem 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Garamond;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.welcome {
+    font-size: 3rem;
+    font-family: Garamond;
+}
+
+.nama {
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: Geneva;
+}
+
+.isi {
+    font-family: garamond;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem;
+    min-height: calc(100vh - 200px);
+    background-image: url('mountain.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding-top: 4rem;
+    font-family: garamond;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.explore-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: garamond;
+}
+
+.explore-btn:hover {
+    background: #333;
+}
+
+.learn-more {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    font-family: garamond;
+}
+
+.learn-more:hover {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.footer-text {
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: garamond;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        background-size: 40% auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem;
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
